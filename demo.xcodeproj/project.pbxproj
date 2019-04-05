@@ -14,6 +14,8 @@
 		78C1C113225739B1005F6C5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78C1C111225739B1005F6C5C /* LaunchScreen.storyboard */; };
 		78C1C11E225739B1005F6C5C /* demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C1C11D225739B1005F6C5C /* demoTests.swift */; };
 		78C1C129225739B1005F6C5C /* demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C1C128225739B1005F6C5C /* demoUITests.swift */; };
+		78C1C13B22573A8E005F6C5C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C1C13A22573A8E005F6C5C /* Card.swift */; };
+		78C1C13D22573B50005F6C5C /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C1C13C22573B50005F6C5C /* Deck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		78C1C124225739B1005F6C5C /* demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = demoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C1C128225739B1005F6C5C /* demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demoUITests.swift; sourceTree = "<group>"; };
 		78C1C12A225739B1005F6C5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78C1C13A22573A8E005F6C5C /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		78C1C13C22573B50005F6C5C /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +101,10 @@
 		78C1C107225739AF005F6C5C /* demo */ = {
 			isa = PBXGroup;
 			children = (
+				78C1C13822573A66005F6C5C /* views */,
+				78C1C13722573A5A005F6C5C /* models */,
+				78C1C13622573A50005F6C5C /* controllers */,
 				78C1C108225739AF005F6C5C /* AppDelegate.swift */,
-				78C1C10A225739AF005F6C5C /* ViewController.swift */,
-				78C1C10C225739AF005F6C5C /* Main.storyboard */,
 				78C1C10F225739B1005F6C5C /* Assets.xcassets */,
 				78C1C111225739B1005F6C5C /* LaunchScreen.storyboard */,
 				78C1C114225739B1005F6C5C /* Info.plist */,
@@ -123,6 +128,31 @@
 				78C1C12A225739B1005F6C5C /* Info.plist */,
 			);
 			path = demoUITests;
+			sourceTree = "<group>";
+		};
+		78C1C13622573A50005F6C5C /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				78C1C10A225739AF005F6C5C /* ViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		78C1C13722573A5A005F6C5C /* models */ = {
+			isa = PBXGroup;
+			children = (
+				78C1C13A22573A8E005F6C5C /* Card.swift */,
+				78C1C13C22573B50005F6C5C /* Deck.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		78C1C13822573A66005F6C5C /* views */ = {
+			isa = PBXGroup;
+			children = (
+				78C1C10C225739AF005F6C5C /* Main.storyboard */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +286,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78C1C13D22573B50005F6C5C /* Deck.swift in Sources */,
 				78C1C10B225739AF005F6C5C /* ViewController.swift in Sources */,
+				78C1C13B22573A8E005F6C5C /* Card.swift in Sources */,
 				78C1C109225739AF005F6C5C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+struct Card {
+    let suite: String
+    let rank: String
+    
+    func toString () -> String {
+        return "\(suite) of \(rank)"
+    }
+}
